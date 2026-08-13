@@ -72,11 +72,11 @@ export function Nav() {
         </div>
 
         <div className="hidden shrink-0 items-center gap-2 md:flex">
-          <Button variant="ghost" size="sm" className="font-semibold">
-            Log In
+          <Button variant="ghost" size="sm" className="font-semibold" asChild>
+            <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">Log In</a>
           </Button>
-          <Button variant="hero" size="sm">
-            Get Started
+          <Button variant="hero" size="sm" asChild>
+            <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">Get Started</a>
           </Button>
         </div>
 
@@ -116,11 +116,11 @@ export function Nav() {
             </li>
           </ul>
           <div className="mt-4 flex flex-col gap-2">
-            <Button variant="outline" className="w-full">
-              Log In
+            <Button variant="outline" className="w-full" asChild>
+              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">Log In</a>
             </Button>
-            <Button variant="hero" className="w-full">
-              Get Started
+            <Button variant="hero" className="w-full" asChild>
+              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">Get Started</a>
             </Button>
           </div>
         </div>

@@ -130,8 +130,10 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button variant="hero" size="lg">
-              Explore TENGABIZ <ArrowRight />
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">
+                Launch TengaBiz <ArrowRight />
+              </a>
             </Button>
             <Button variant="soft" size="lg" asChild>
               <a href="#how-it-works">
