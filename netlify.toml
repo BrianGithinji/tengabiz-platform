@@ -1,6 +1,6 @@
 [build]
   command = "bun install && bun run build"
-  publish = "dist/client"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
@@ -8,5 +8,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
