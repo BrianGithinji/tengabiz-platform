@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Menu, X, ShieldCheck } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
+import tengabizLogo from "@/assets/tengabiz.png";
 
 const links = [
   { label: "Product", href: "#product" },
@@ -13,15 +14,12 @@ const links = [
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
-    <a href="#top" className="flex min-w-0 items-center gap-2.5">
-      <span className="bg-gradient-primary grid h-9 w-9 shrink-0 place-items-center rounded-xl shadow-[var(--shadow-glow)]">
-        <ShieldCheck className="h-5 w-5 text-primary-foreground" strokeWidth={2.4} />
-      </span>
-      <span
-        className={`font-display truncate text-lg font-extrabold tracking-tight ${compact ? "sr-only sm:not-sr-only" : ""}`}
-      >
-        TENGA<span className="text-primary">BIZ</span>
-      </span>
+    <a href="#top" className="flex min-w-0 items-center">
+      <img
+        src={tengabizLogo}
+        alt="TengaBiz"
+        className={`h-10 w-auto object-contain ${compact ? "sm:h-10" : ""}`}
+      />
     </a>
   );
 }
