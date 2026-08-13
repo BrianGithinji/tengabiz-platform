@@ -25,7 +25,7 @@ export function OurOrigin() {
             The ACCESS Challenge That Started Everything
           </h2>
           <p className="mb-6 text-muted-foreground leading-relaxed">
-            In 2024, Brian Githinji and Rose Brenda Gathoni were students at Strathmore University
+            In 2024, Brian Githinji and Rose Brenda Gathoni were students at Mount Kenya University
             when they entered the{" "}
             <span className="font-semibold text-foreground">ACCESS Business Challenge</span> — a
             prestigious student entrepreneurship competition designed to push young innovators to
@@ -134,7 +134,7 @@ export function OurOrigin() {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Back at Strathmore, Brian and Brenda threw themselves into building a solution.
+              Back at Mount Kenya University, Brian and Brenda threw themselves into building a solution.
               Late nights in the library, whiteboard sessions that stretched past midnight,
               arguments about features, pivots on the business model — all of it anchored by one
               question they kept asking themselves: <em>"Would this actually help Mama Wanjiku?"</em>
