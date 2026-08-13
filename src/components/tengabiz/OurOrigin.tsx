@@ -1,6 +1,5 @@
 import brianImg from "@/assets/brian.jpg";
 import brendaImg from "@/assets/brenda.jpg";
-import posterImg from "@/assets/access-poster.jpeg";
 
 export function OurOrigin() {
   return (
@@ -14,8 +13,8 @@ export function OurOrigin() {
           Our Origin Story
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          Two university students. One bold challenge. A mission to fix how African small businesses
-          handle money — forever.
+          Two university students. One real woman's struggle. A mission to fix how African small
+          businesses handle money — forever.
         </p>
       </section>
 
@@ -27,103 +26,144 @@ export function OurOrigin() {
           </h2>
           <p className="mb-6 text-muted-foreground leading-relaxed">
             In 2024, Brian Githinji and Rose Brenda Gathoni were students at Strathmore University
-            when they entered the <span className="font-semibold text-foreground">ACCESS
-            Business Challenge</span> — a prestigious student entrepreneurship competition designed
-            to push young innovators to solve real-world problems with scalable solutions.
+            when they entered the{" "}
+            <span className="font-semibold text-foreground">ACCESS Business Challenge</span> — a
+            prestigious student entrepreneurship competition designed to push young innovators to
+            solve real-world problems with scalable solutions.
           </p>
-          <p className="mb-8 text-muted-foreground leading-relaxed">
-            The brief was simple but weighty: <em>"Identify a critical gap in the African business
-            ecosystem and build something that actually fixes it."</em> For Brian and Brenda, the
-            answer was hiding in plain sight — in the chaotic, mixed-up finances of millions of
-            micro and small business owners across Kenya and beyond.
+          <p className="text-muted-foreground leading-relaxed">
+            The brief was simple but weighty:{" "}
+            <em>
+              "Identify a critical gap in the African business ecosystem and build something that
+              actually fixes it."
+            </em>{" "}
+            For Brian and Brenda, the answer came not from a textbook or a market research report —
+            but from a woman named <span className="font-semibold text-foreground">Mama Wanjiku</span>.
           </p>
-          <div className="overflow-hidden rounded-xl border border-border">
-            <img
-              src={posterImg}
-              alt="ACCESS Business Challenge Poster"
-              className="w-full object-contain"
-            />
+        </div>
+      </section>
+
+      {/* Mama Wanjiku Story */}
+      <section className="bg-secondary/30 px-4 py-16">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-6 flex items-center gap-3">
+            <span className="text-4xl">🛒</span>
+            <h2 className="font-display text-2xl font-bold">The Woman Who Changed Everything</h2>
           </div>
-          <p className="mt-4 text-center text-xs text-muted-foreground">
-            The ACCESS Business Challenge poster — the competition that sparked TengaBiz
-          </p>
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              Mama Wanjiku ran a small grocery stall in the heart of Githurai market. She was up
+              before dawn every morning, arranging tomatoes, onions, and sukuma wiki with the
+              precision of someone who had done it a thousand times — because she had. Her stall
+              was always busy. Her smile was always warm. Her hustle was relentless.
+            </p>
+            <p>
+              But at the end of every month, Mama Wanjiku faced the same crushing reality: she
+              didn't have enough money to restock. Not because business was bad. Business was
+              actually good. The problem was that her business money and her personal money lived
+              in the same place — her M-Pesa account — and the two were completely inseparable.
+            </p>
+            <p>
+              School fees for her youngest came out of the same wallet as stock money. A family
+              emergency dipped into the same pot as her supplier payments. A good week of sales
+              felt like personal income, so she spent it like personal income. By the time
+              restock day came, the money that should have been there — wasn't.
+            </p>
+            <p>
+              She wasn't reckless. She wasn't irresponsible. She was simply operating without a
+              system. Without a way to see, in real time, what belonged to her business and what
+              was hers to spend. She was running a business with her eyes closed — not by choice,
+              but because no tool had ever been built to help her open them.
+            </p>
+            <p className="rounded-2xl border-l-4 border-primary bg-card px-6 py-5 font-medium text-foreground">
+              "I work so hard every day. I don't understand where the money goes. By Friday I have
+              nothing left to buy new stock. I feel like I am going backwards." — Mama Wanjiku
+            </p>
+            <p>
+              Brian and Brenda heard her story during a community field visit as part of their
+              ACCESS Challenge research. They sat with her for over an hour, listening. And the
+              more she spoke, the more they realised: Mama Wanjiku was not an exception. She was
+              the rule. Millions of small business owners across Kenya — across Africa — were
+              living the exact same story, trapped in the exact same invisible cycle.
+            </p>
+            <p>
+              They left that market with one shared conviction: this problem was solvable. And
+              they were going to solve it.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* The Problem They Saw */}
+      <section className="mx-auto max-w-4xl px-4 py-16">
+        <h2 className="font-display mb-8 text-center text-2xl font-bold">
+          The Problem They Couldn't Ignore
+        </h2>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {[
+            {
+              icon: "💸",
+              title: "Mixed Money",
+              desc: "Business owners were using the same M-Pesa account for school fees, groceries, and stock — with no way to tell what belonged to the business.",
+            },
+            {
+              icon: "📉",
+              title: "Invisible Losses",
+              desc: "Profits were being silently eaten by personal spending. Owners thought they were growing, but their businesses were slowly bleeding out.",
+            },
+            {
+              icon: "🚫",
+              title: "Locked Out of Credit",
+              desc: "Without clean financial records, banks and SACCOs turned them away. No history meant no loans — and no loans meant no growth.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
+              <div className="mb-3 text-3xl">{item.icon}</div>
+              <h3 className="mb-2 font-semibold">{item.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Building the Solution */}
       <section className="bg-secondary/30 px-4 py-16">
         <div className="mx-auto max-w-4xl">
           <h2 className="font-display mb-8 text-center text-2xl font-bold">
-            The Problem They Couldn't Ignore
+            From a Market Stall to a Mission
           </h2>
-          <div className="grid gap-6 sm:grid-cols-3">
-            {[
-              {
-                icon: "💸",
-                title: "Mixed Money",
-                desc: "Business owners were using the same M-Pesa account for school fees, groceries, and stock — with no way to tell what belonged to the business.",
-              },
-              {
-                icon: "📉",
-                title: "Invisible Losses",
-                desc: "Profits were being silently eaten by personal spending. Owners thought they were growing, but their businesses were slowly bleeding out.",
-              },
-              {
-                icon: "🚫",
-                title: "Locked Out of Credit",
-                desc: "Without clean financial records, banks and SACCOs turned them away. No history meant no loans — and no loans meant no growth.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
-                <div className="mb-3 text-3xl">{item.icon}</div>
-                <h3 className="mb-2 font-semibold">{item.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              Back at Strathmore, Brian and Brenda threw themselves into building a solution.
+              Late nights in the library, whiteboard sessions that stretched past midnight,
+              arguments about features, pivots on the business model — all of it anchored by one
+              question they kept asking themselves: <em>"Would this actually help Mama Wanjiku?"</em>
+            </p>
+            <p>
+              They went back to the market. They interviewed more traders, more shop owners, more
+              fundis and food vendors. Every conversation confirmed the same thing: the problem
+              wasn't a lack of hard work or ambition. It was a lack of financial infrastructure
+              designed for the way these businesses actually operated — in cash, in M-Pesa, in
+              daily cycles, in communities where business and family life are deeply intertwined.
+            </p>
+            <p>
+              The solution they built was named{" "}
+              <span className="font-semibold text-foreground">TengaBiz</span> — from the Swahili
+              word <em>tenga</em>, meaning "to separate." Because the single most powerful thing
+              any small business owner can do is separate their business money from their personal
+              money. Everything else — savings, loan readiness, financial clarity — flows from
+              that one act.
+            </p>
+            <p>
+              TengaBiz is their answer to Mama Wanjiku. And to every business owner like her
+              across the continent who deserves better than guessing where their money went.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* The Story */}
-      <section className="mx-auto max-w-4xl px-4 py-16">
-        <h2 className="font-display mb-10 text-center text-2xl font-bold">The Story Behind the Solution</h2>
-        <div className="space-y-8 text-muted-foreground leading-relaxed">
-          <p>
-            Brian had watched his aunt — a vibrant mama mboga in Kawangware — work tirelessly from
-            5 AM to 8 PM every single day, yet somehow never have enough money to restock properly
-            at the end of the month. She wasn't lazy. She wasn't careless. She simply had no system
-            to separate what was hers personally from what belonged to her business.
-          </p>
-          <p>
-            Brenda had seen the same pattern in her home county of Murang'a — small shop owners,
-            tailors, and food vendors who were genuinely hardworking but financially invisible.
-            They couldn't access loans. They couldn't plan. They couldn't grow. Not because they
-            lacked ambition, but because the tools built for finance were never built for them.
-          </p>
-          <p>
-            When the ACCESS Challenge came, Brian and Brenda didn't have to search far for their
-            problem statement. They had lived it. They had seen it. And they were angry enough
-            about it to do something.
-          </p>
-          <p>
-            Late nights in the Strathmore library, whiteboard sessions that stretched past midnight,
-            arguments about features, pivots on the business model, and one shared conviction:{" "}
-            <span className="font-semibold text-foreground">
-              African micro-businesses deserve a financial operating system built specifically for
-              how they actually live and work.
-            </span>
-          </p>
-          <p>
-            That conviction became <span className="font-semibold text-foreground">TengaBiz</span>{" "}
-            — a name drawn from the Swahili word <em>tenga</em>, meaning "to separate." Because
-            the first and most powerful step toward financial health for any small business owner
-            is simply separating business money from personal money.
-          </p>
-        </div>
-      </section>
-
       {/* Founders */}
-      <section className="bg-secondary/30 px-4 py-16">
+      <section className="px-4 py-16">
         <div className="mx-auto max-w-4xl">
           <h2 className="font-display mb-12 text-center text-2xl font-bold">Meet the Founders</h2>
           <div className="grid gap-10 sm:grid-cols-2">
@@ -140,10 +180,9 @@ export function OurOrigin() {
               <p className="mb-1 text-sm font-medium text-primary">Co-Founder & CEO</p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                 Brian is a technology and business strategist with a deep passion for financial
-                inclusion. Driven by watching family members struggle with informal business
-                finances, he channelled that frustration into building systems that actually work
-                for the people who need them most. At TengaBiz, Brian leads product vision and
-                growth strategy.
+                inclusion. Sitting with Mama Wanjiku in Githurai market lit a fire in him that
+                hasn't gone out since. At TengaBiz, he leads product vision and growth strategy,
+                obsessed with building tools that work for the people who need them most.
               </p>
             </div>
 
@@ -159,26 +198,25 @@ export function OurOrigin() {
               <h3 className="font-display text-xl font-bold">Rose Brenda Gathoni</h3>
               <p className="mb-1 text-sm font-medium text-primary">Co-Founder & COO</p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                Brenda brings a rare combination of empathy and operational precision. Having grown
-                up witnessing the financial struggles of small business owners in her community,
-                she became obsessed with designing solutions that are not just powerful but
-                genuinely accessible. At TengaBiz, Brenda leads operations, partnerships, and
-                user experience.
+                Brenda brings a rare combination of empathy and operational precision. She heard
+                Mama Wanjiku's story and refused to accept that it was inevitable. At TengaBiz,
+                she leads operations, partnerships, and user experience — ensuring every feature
+                is genuinely accessible to the people it was built for.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What They Built */}
-      <section className="mx-auto max-w-4xl px-4 py-16 text-center">
+      {/* Closing */}
+      <section className="mx-auto max-w-4xl px-4 pb-20 text-center">
         <h2 className="font-display mb-6 text-2xl font-bold">From a Student Challenge to a Movement</h2>
         <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
-          What started as a competition entry has grown into a full financial operating system
-          for African micro and small businesses — with features like Business Lock, Smart Savings,
-          AI-powered insights, and Loan Readiness scoring. TengaBiz is not just a product. It is
-          a promise: that every hardworking business owner in Africa deserves the financial tools
-          to separate, protect, and grow their money with confidence.
+          What started as a competition entry — inspired by one woman's struggle to restock her
+          market stall — has grown into a full financial operating system for African micro and
+          small businesses. TengaBiz is not just a product. It is a promise: that every
+          hardworking business owner in Africa deserves the financial tools to separate, protect,
+          and grow their money with confidence.
         </p>
         <div className="mt-10 inline-flex items-center gap-3 rounded-2xl border border-primary/20 bg-primary/5 px-6 py-4">
           <span className="text-2xl">🌍</span>
