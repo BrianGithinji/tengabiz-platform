@@ -1,0 +1,265 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * TENGABIZ design system — African fintech: trust, clarity, growth.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-primary-deep: var(--primary-deep);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-float: var(--shadow-float);
+  --shadow-glow: var(--shadow-glow);
+}
+
+:root {
+  --radius: 1rem;
+  --background: oklch(0.995 0.003 150);
+  --foreground: oklch(0.24 0.015 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.015 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.015 250);
+
+  --primary: oklch(0.55 0.135 158);
+  --primary-foreground: oklch(0.99 0.005 150);
+  --primary-glow: oklch(0.72 0.16 152);
+  --primary-deep: oklch(0.34 0.08 162);
+
+  --secondary: oklch(0.96 0.012 155);
+  --secondary-foreground: oklch(0.3 0.05 162);
+  --muted: oklch(0.965 0.006 150);
+  --muted-foreground: oklch(0.53 0.018 250);
+  --accent: oklch(0.94 0.03 155);
+  --accent-foreground: oklch(0.34 0.08 162);
+
+  --gold: oklch(0.79 0.14 78);
+  --gold-foreground: oklch(0.28 0.05 60);
+
+  --destructive: oklch(0.6 0.19 24);
+  --destructive-foreground: oklch(0.99 0.005 150);
+
+  --surface: oklch(0.985 0.005 150);
+  --surface-2: oklch(0.96 0.01 155);
+
+  --border: oklch(0.92 0.008 155);
+  --input: oklch(0.92 0.008 155);
+  --ring: oklch(0.55 0.135 158);
+
+  --chart-1: oklch(0.55 0.135 158);
+  --chart-2: oklch(0.72 0.16 152);
+  --chart-3: oklch(0.79 0.14 78);
+  --chart-4: oklch(0.34 0.08 162);
+  --chart-5: oklch(0.6 0.06 220);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary-deep), var(--primary) 55%, var(--primary-glow));
+  --gradient-soft: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 8%, transparent),
+    transparent
+  );
+  --gradient-mesh: radial-gradient(
+      60% 60% at 15% 10%,
+      color-mix(in oklab, var(--primary-glow) 22%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      50% 50% at 95% 20%,
+      color-mix(in oklab, var(--gold) 16%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      70% 60% at 50% 100%,
+      color-mix(in oklab, var(--primary) 12%, transparent),
+      transparent
+    );
+
+  --shadow-soft: 0 1px 2px color-mix(in oklab, var(--primary-deep) 6%, transparent),
+    0 8px 24px -12px color-mix(in oklab, var(--primary-deep) 14%, transparent);
+  --shadow-card: 0 2px 4px color-mix(in oklab, var(--primary-deep) 5%, transparent),
+    0 18px 40px -20px color-mix(in oklab, var(--primary-deep) 22%, transparent);
+  --shadow-float: 0 30px 70px -28px color-mix(in oklab, var(--primary-deep) 34%, transparent),
+    0 8px 24px -12px color-mix(in oklab, var(--primary-deep) 18%, transparent);
+  --shadow-glow: 0 20px 60px -18px color-mix(in oklab, var(--primary-glow) 55%, transparent);
+}
+
+.dark {
+  --background: oklch(0.18 0.02 165);
+  --foreground: oklch(0.97 0.005 150);
+  --card: oklch(0.23 0.025 165);
+  --card-foreground: oklch(0.97 0.005 150);
+  --popover: oklch(0.23 0.025 165);
+  --popover-foreground: oklch(0.97 0.005 150);
+  --primary: oklch(0.72 0.16 152);
+  --primary-foreground: oklch(0.19 0.03 165);
+  --secondary: oklch(0.28 0.03 165);
+  --secondary-foreground: oklch(0.97 0.005 150);
+  --muted: oklch(0.28 0.03 165);
+  --muted-foreground: oklch(0.74 0.02 155);
+  --accent: oklch(0.3 0.04 160);
+  --accent-foreground: oklch(0.97 0.005 150);
+  --surface: oklch(0.21 0.022 165);
+  --surface-2: oklch(0.26 0.028 165);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+@utility bg-mesh {
+  background-image: var(--gradient-mesh);
+}
+
+@utility glass {
+  background-color: color-mix(in oklab, var(--card) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid color-mix(in oklab, var(--primary) 12%, transparent);
+}
+
+@utility card-hover {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+    border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+  }
+}
+
+/* Scroll reveal */
+@utility reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@utility revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@utility animate-float {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes flow-dot {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@utility animate-flow {
+  animation: flow-dot 2.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
