@@ -126,7 +126,7 @@ export function Hero() {
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             TENGABIZ helps micro-business owners understand where their money goes, protect business
-            funds, save toward goals, and build a stronger financial profile.
+            funds, save toward goals, and build a stronger financial profile with our 60/20/20 rule.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
