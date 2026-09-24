@@ -431,12 +431,12 @@ export function FinalCTA() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button variant="onPrimary" size="lg" asChild>
-              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">
+              <a href="https://tengabiz-app.onrender.com" target="_blank" rel="noopener noreferrer">
                 Get Started <ArrowRight />
               </a>
             </Button>
             <Button variant="onPrimaryOutline" size="lg" asChild>
-              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">
+              <a href="https://tengabiz-app.onrender.com" target="_blank" rel="noopener noreferrer">
                 Explore TENGABIZ
               </a>
             </Button>

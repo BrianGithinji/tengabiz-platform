@@ -131,7 +131,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://tengabiz.ai.studio" target="_blank" rel="noopener noreferrer">
+              <a href="https://tengabiz-app.onrender.com" target="_blank" rel="noopener noreferrer">
                 Launch TengaBiz <ArrowRight />
               </a>
             </Button>
