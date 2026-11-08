@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import tengabizLogo from "@/assets/tengabiz.png";
 
@@ -58,14 +57,6 @@ export function Nav() {
                 </a>
               </li>
             ))}
-            <li>
-              <Link
-                to="/our-origin"
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              >
-                Our Origin
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -103,15 +94,6 @@ export function Nav() {
                 </a>
               </li>
             ))}
-            <li>
-              <Link
-                to="/our-origin"
-                onClick={() => setOpen(false)}
-                className="block rounded-xl px-3 py-3 text-base font-semibold text-foreground transition-colors hover:bg-secondary"
-              >
-                Our Origin
-              </Link>
-            </li>
           </ul>
           <div className="mt-4 flex flex-col gap-2">
             <Button variant="outline" className="w-full" asChild>
